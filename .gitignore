@@ -1,0 +1,9 @@
+config.csv
+config.xml
+feed.xml
+requests.ipynb
+trafic.ipynb
+verkeersdata.csv
+verkeersdata.xml
+verkeersdata1.csv
+__pycache__/
