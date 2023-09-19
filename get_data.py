@@ -58,8 +58,8 @@ def getData():
                 
                 previous_count = values_list[0][6+int(hour)]
                 new_count = previous_count + count
-                df.loc[df['meetpunt_id'] == int(meetpunt_id), 'u'+str(hour)] = new_count
-                df.loc[df['meetpunt_id'] == int(meetpunt_id), 'last_updated'] = date
+                df.loc[(df['meetpunt_id'] == int(meetpunt_id)) & (df['datum'] == str(datum)), 'u'+str(hour)] = new_count
+                df.loc[(df['meetpunt_id'] == int(meetpunt_id)) & (df['datum'] == str(datum)), 'last_updated'] = date
                 df.loc[(df['meetpunt_id'] == int(meetpunt_id)) & (df['datum'] == str(datum)), 'updated'] +=1
             
             #or else, adds a new row with new date (in the momentary df)

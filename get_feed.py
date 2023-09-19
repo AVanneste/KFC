@@ -37,5 +37,5 @@ def getFeed():
             df_err = pd.DataFrame(columns=columns)
         
         df_err.loc[len(df_err)] = datetime.datetime.now()
-        df_err.to_csv('no_update.csv')
+        df_err.to_csv('no_update.csv', index=False)
         print('couldnt get updated feed, logged in error file')

@@ -8,3 +8,11 @@ verkeersdata.xml
 verkeersdata1.csv
 __pycache__/
 kfc_venv/
+GCP/
+no_update.csv
+kfc.zip
+kfc_gcp.zip
+meetpunten.csv
+verkeersdata2.csv
+.gitignore
+verkeersdata-2023-09-15.csv
